@@ -5,14 +5,7 @@
 	"author": "Sayan Sarkar",
 	"license": "See license in https://github.com/sayansarkar2207/IDSP-VISION/license",
 	"description": "IDSP VISION Dashboard",
-	"homepage": "http://sayansarkar2207.github.io/IDSP-VISION",
-	"bugs": {
-		"url": "https://github.com/sayansarkar2207/IDSP-VISION/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/sayansarkar2207/IDSP-VISION.git"
-	},
+	"homepage": "https://1b14-103-220-210-212.ngrok-free.app/",
 	"dependencies": {
 		"@emotion/cache": "11.4.0",
 		"@emotion/react": "^11.9.3",
