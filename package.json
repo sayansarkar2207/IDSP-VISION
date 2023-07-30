@@ -1,17 +1,17 @@
 {
-	"name": "vision-ui-dashboard-react",
+	"name": "idsp-vision",
 	"version": "3.0.0",
 	"private": true,
-	"author": "Creative Tim",
-	"license": "See license in https://www.creative-tim.com/license",
-	"description": "Material UI version of Vision UI Dashboard by Creative Tim",
-	"homepage": "https://demos.creative-tim.com/vision-ui-dashboard-react/#/dashboard",
+	"author": "Sayan Sarkar",
+	"license": "See license in https://github.com/sayansarkar2207/IDSP-VISION/license",
+	"description": "IDSP VISION Dashboard",
+	"homepage": "http://sayansarkar2207.github.io/IDSP-VISION",
 	"bugs": {
-		"url": "https://github.com/creativetimofficial/vision-ui-dashboard-react/issues"
+		"url": "https://github.com/sayansarkar2207/IDSP-VISION/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/creativetimofficial/vision-ui-dashboard-react.git"
+		"url": "git+https://github.com/sayansarkar2207/IDSP-VISION.git"
 	},
 	"dependencies": {
 		"@emotion/cache": "11.4.0",
@@ -45,6 +45,8 @@
 		"web-vitals": "1.0.1"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts --openssl-legacy-provider start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
