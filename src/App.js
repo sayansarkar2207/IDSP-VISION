@@ -55,6 +55,10 @@ export default function App() {
   const [rtlCache, setRtlCache] = useState(null);
   const { pathname } = useLocation();
   const [authenticated, setAuthenticated] = useState(true);
+  document.body.style.overflow = "auto";
+  document.body.style.scrollbarWidth = "none";
+  
+  
 
   // Cache for the rtl
   useMemo(() => {
@@ -121,9 +125,11 @@ export default function App() {
       }
 
       return null;
-    });
+    }
+    );
 
   const configsButton = (
+    
     <VuiBox
       display="flex"
       justifyContent="center"
@@ -169,7 +175,7 @@ export default function App() {
         <Switch>
         <Route exact path="/authentication/sign-in" component={SignIn} />
           {getRoutes(routes)}
-          <Redirect from="*" to="/dashboard" />
+          <Redirect from="*" to="/authentication/sign-in" />
         </Switch>
       </ThemeProvider>
     </CacheProvider>
@@ -193,7 +199,7 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Switch>
         {getRoutes(routes)}
-        <Redirect from="*" to="/dashboard" />
+        <Redirect from="*" to="/authentication/sign-in" />
       </Switch>
     </ThemeProvider>
   );

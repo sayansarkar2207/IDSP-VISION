@@ -71,7 +71,7 @@ const CarInformations = () => {
 						})}
 						alignItems='center'>
 						<VuiBox sx={{ position: 'relative', display: 'inline-flex' }}>
-							<CircularProgress variant='determinate' value={60} size={170} color='success' />
+							<CircularProgress variant='determinate' value={68} size={170} color='success' />
 							<VuiBox
 							sx={{
 								top: 0,

@@ -47,7 +47,7 @@ import borders from "assets/theme/base/borders";
 import CoverLayout from "layouts/authentication/components/CoverLayout";
 
 // Images
-import bgSignIn from "assets/images/signUpImage.png";
+import bgSignIn from "assets/images/signUpImage1.png";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);
@@ -58,10 +58,10 @@ function SignIn() {
     <CoverLayout
       title="Welcome!"
       color="white"
-      description="Use these awesome forms to login or create new account in your project for free."
+      description="Step into our community in a flash, Fill the details and You Are Good To Go !!!"
       image={bgSignIn}
       premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      motto="THE IDSP VISION DASHBOARD"
       cardContent
     >
       <GradientBorder borderRadius={borders.borderRadius.form} minWidth="100%" maxWidth="100%">
@@ -267,9 +267,17 @@ function SignIn() {
             </VuiTypography>
           </VuiBox>
           <VuiBox mt={4} mb={1}>
+          <VuiTypography
+              component={Link}
+              to="/dashboard"
+              variant="button"
+              color="white"
+              fontWeight="medium"
+            >
             <VuiButton color="info" fullWidth>
               SIGN UP
             </VuiButton>
+            </VuiTypography>
           </VuiBox>
           <VuiBox mt={3} textAlign="center">
             <VuiTypography variant="button" color="text" fontWeight="regular">

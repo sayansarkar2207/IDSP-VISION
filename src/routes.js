@@ -41,8 +41,20 @@
 // Vision UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
+import Disease_Outbreaks from "layouts/disease_outbreaks";
+import Geographic_Distribution from "layouts/geographic_distribution";
+import Disease_Statistics from "layouts/disease_statistics";
+import Real_Time_Alerts from "layouts/real_time_alerts";
+import Demographic_Analysis from "layouts/demographic_analysis";
+import Data_Quality from "layouts/data_quality";
+import Source_of_Reporting from "layouts/source_of_reporting";
+import Disease_Forms from "layouts/disease_forms";
+import Trend_Analysis from "layouts/trend_analysis";
+import Syndromic_Surveillance from "layouts/syndromic_surveillance";
+import Heatmaps from "layouts/heatmaps";
+import Comparative_Analysis from "layouts/comparative_analysis";
+import Resource_Allocation from "layouts/resource_allocation";
 import Billing from "layouts/billing";
-import RTL from "layouts/rtl";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
@@ -56,6 +68,20 @@ import { BsCreditCardFill } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 
+import { IoAlertCircle } from "react-icons/io5";
+import { IoPeopleCircleSharp } from "react-icons/io5";
+import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
+import { IoDocumentTextSharp } from "react-icons/io5";
+import { IoNewspaperSharp } from "react-icons/io5";
+import { IoTriangleSharp } from "react-icons/io5";
+import { IoPulseSharp } from "react-icons/io5";
+import { IoFlameSharp } from "react-icons/io5";
+import { IoBarChartSharp } from "react-icons/io5";
+import { IoAnalytics } from "react-icons/io5";
+import { MdLocalHospital } from "react-icons/md";
+import { GiWorld } from "react-icons/gi";
+
+
 const routes = [
   {
     type: "collapse",
@@ -64,6 +90,123 @@ const routes = [
     route: "/dashboard",
     icon: <IoHome size="15px" color="inherit" />,
     component: Dashboard,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Disease Outbreaks",
+    key: "disease_outbreaks",
+    route: "/disease_outbreaks",
+    icon: <MdLocalHospital size="15px" color="inherit" />,
+    component: Disease_Outbreaks,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Geographic Distribution",
+    key: "geographic_distribution",
+    route: "/geographic_distribution",
+    icon: <GiWorld size="15px" color="inherit" />,
+    component: Geographic_Distribution,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Disease Statistics",
+    key: "disease_statistics",
+    route: "/disease_statistics",
+    icon: <IoStatsChart size="15px" color="inherit" />,
+    component: Disease_Statistics,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Real-time Alerts",
+    key: "real_time_alerts",
+    route: "/real_time_alerts",
+    icon: <IoAlertCircle size="15px" color="inherit" />,
+    component: Real_Time_Alerts,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Demographic Analysis",
+    key: "demographic_analysis",
+    route: "/demographic_analysis",
+    icon: <IoPeopleCircleSharp size="15px" color="inherit" />,
+    component: Demographic_Analysis,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Data Quality",
+    key: "data_quality",
+    route: "/data_quality",
+    icon: <IoCheckmarkDoneCircleSharp size="15px" color="inherit" />,
+    component: Data_Quality,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Source of Reporting",
+    key: "source_of_reporting",
+    route: "/source_of_reporting",
+    icon: <IoDocumentTextSharp size="15px" color="inherit" />,
+    component: Source_of_Reporting,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Disease Forms",
+    key: "disease_forms",
+    route: "/disease_forms",
+    icon: <IoNewspaperSharp size="15px" color="inherit" />,
+    component: Disease_Forms,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Trend Analysis",
+    key: "trend_analysis",
+    route: "/trend_analysis",
+    icon: <IoTriangleSharp size="15px" color="inherit" />,
+    component: Trend_Analysis,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Syndromic Surveillance",
+    key: "syndromic_surveillance",
+    route: "/syndromic_surveillance",
+    icon: <IoPulseSharp size="15px" color="inherit" />,
+    component: Syndromic_Surveillance,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Heatmaps",
+    key: "heatmaps",
+    route: "/heatmaps",
+    icon: <IoFlameSharp size="15px" color="inherit" />,
+    component: Heatmaps,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Comparative Analysis",
+    key: "comparative_analysis",
+    route: "/comparative_analysis",
+    icon: <IoBarChartSharp size="15px" color="inherit" />,
+    component: Comparative_Analysis,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Resource Allocation",
+    key: "resource_allocation",
+    route: "/resource_allocation",
+    icon: <IoAnalytics size="15px" color="inherit" />,
+    component: Resource_Allocation,
     noCollapse: true,
   },
   {
@@ -102,6 +245,15 @@ const routes = [
     route: "/authentication/sign-in",
     icon: <IoRocketSharp size="15px" color="inherit" />,
     component: SignIn,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Sign Up",
+    key: "sign-up",
+    route: "/authentication/sign-up",
+    icon: <IoIosDocument size="15px" color="inherit" />,
+    component: SignUp,
     noCollapse: true,
   },
 ];

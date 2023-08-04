@@ -42,6 +42,8 @@ import breakpoints from "assets/theme/base/breakpoints";
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 
+import SignUp from "layouts/authentication/sign-up";
+
 function DefaultNavbar({ transparent, light, action }) {
   const { borderCol } = colors;
   const { borderWidth } = borders;
